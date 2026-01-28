@@ -1,12 +1,10 @@
 const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
-  reporter: [
-    ['list'],
-    ['allure-playwright']
-  ],
+  testDir: './tests', // folder containing your test files
+  reporter: [['allure-playwright']], // generates allure-results
   use: {
     headless: true,
-    screenshot: 'only-on-failure',
+    viewport: { width: 1280, height: 720 },
   },
 });
