@@ -49,3 +49,4 @@ if %TEST_EXITCODE% NEQ 0 (
 
 echo All tests passed! Build SUCCESS.
 exit /b 0
+echo test
